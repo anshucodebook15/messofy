@@ -1,0 +1,15 @@
+footer                       Complete
+table                        Complete
+Recent Posts                 Complete
+navigation                   Complete
+anchor color with hover      Complete
+
+
+
+
+
+
+Home Page
+Category Page
+Main pages
+Blog Page                   Complete
