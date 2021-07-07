@@ -126,6 +126,34 @@
   background-color: rgb(248, 248, 248);
 }
 
+// .card_heads {
+//   width: ;
+// }
+
+.card_head_ul {
+  height: 0.2rem !important;
+  color: brown;
+  background-color: brown;
+}
+
+.rcard{
+  border-radius: 2rem !important;
+  overflow: hidden !important;
+}
+
+.rcard_tag{
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  background-color: rgb(255, 244, 244);
+  padding: .3rem .8rem;
+
+}
+
+.rcard_expert{
+  line-height: 1.5;
+}
+
 @media screen and (max-width: 780px) {
   .hero_wordblock {
     &-title {

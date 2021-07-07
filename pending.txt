@@ -13,3 +13,20 @@ Home Page
 Category Page
 Main pages
 Blog Page                   Complete
+
+
+
+// pages
+
+/ index.php D
+/ page.php  D
+/ single.php    D
+/ category.php  D
+/ 404.php       D
+
+/ style.php     D
+/ screenshot.php    D
+/ functions.php     D
+/ header.php        D
+/ footer.php        D
+/ 

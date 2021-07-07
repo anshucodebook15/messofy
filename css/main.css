@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500;600;700&family=Oxygen:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.fff {
+  color: #fff !important;
+}
+
 .dim {
   color: #838383;
 }
@@ -81,7 +85,7 @@ blockquote,
 button,
 table,
 input {
-  margin-bottom: 1.9rem !important;
+  margin-bottom: 1.8rem !important;
 }
 
 ul,
@@ -279,6 +283,17 @@ body {
 .fxd {
   position: fixed;
   z-index: 1000;
+}
+
+.rl {
+  position: relative;
+}
+
+.abc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 780px) {
@@ -519,6 +534,10 @@ body {
   box-shadow: 0px 10px 30px 0 rgba(182, 182, 182, 0.2);
 }
 
+.lshd2 {
+  box-shadow: 0px 10px 30px 0 rgba(163, 163, 163, 0.2);
+}
+
 .container {
   max-width: 125rem;
 }
@@ -545,8 +564,8 @@ body {
 
 button {
   border: none;
-  background-color: #f1f1f1;
-  color: #cecece;
+  background-color: brown;
+  color: white;
   padding: 1rem;
 }
 
@@ -822,8 +841,8 @@ a {
 
 button {
   border: none;
-  background-color: #f1f1f1;
-  color: #cecece;
+  background-color: brown;
+  color: white;
   padding: 1rem;
 }
 
@@ -1026,6 +1045,29 @@ tr:nth-child(odd) {
 
 .letsconnect {
   background-color: #f8f8f8;
+}
+
+.card_head_ul {
+  height: 0.2rem !important;
+  color: brown;
+  background-color: brown;
+}
+
+.rcard {
+  border-radius: 2rem !important;
+  overflow: hidden !important;
+}
+
+.rcard_tag {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  background-color: #fff4f4;
+  padding: .3rem .8rem;
+}
+
+.rcard_expert {
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 780px) {

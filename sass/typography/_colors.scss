@@ -15,14 +15,20 @@ $font_clr: #191919;
 $bg_clr: #f0f4ff;
 $cta_clr: #f00d00;
 
+
 // Component Color
-$btn_bg_clr: rgb(241, 241, 241); // button Background Color
-$btn_clr: rgb(206, 206, 206); // button Color
+$btn_bg_clr: brown; // button Background Color
+$btn_clr: rgb(255, 255, 255); // button Color
 
 $blq_clr: rgb(238, 238, 238); // Bloquote Color
 
 $a_clr: brown; // Anchor Color
 $a_clr_hover: rgb(22, 22, 22); // Anchor Color
+
+
+.fff{
+  color: #fff !important;
+}
 
 .dim {
   color: rgb(131, 131, 131);
