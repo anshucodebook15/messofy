@@ -3,7 +3,7 @@
 
 <div class="main">
 
-    <h2>This is an Index Page Which is First Called as Home page</h2>
+    <h2>This is Index Page</h2>
 
 </div>
 
