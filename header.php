@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
 
+
+    <base href="">
+
     <!-- Bootstrap Css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- End Bootstrap -->
@@ -28,13 +31,56 @@
     <!-- Slick Crousal -->
 
     <!-- Css Link -->
-    <link rel="stylesheet" href="<?php // echo get_template_directory_uri(); 
-                                    ?>/css/main.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
     <!-- End Css Link -->
+
+    <style>
+        .testli {
+            list-style-type: none;
+            display: flex;
+            margin: 0 !important;
+            width: max-content;
+            padding: 0;
+        }
+
+        .testli li {
+            padding: .3rem 2rem .5rem 2rem !important;
+        }
+
+        .testli a {
+            text-decoration: none;
+        }
+
+        .current-menu-item>a {
+            color: #000 !important;
+        }
+
+
+        /* Categories Styles */
+
+        .rcard_tag ul {
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .rcard_tag a{
+            text-decoration: none;
+            font-size: 1.6rem;
+        }
+
+        
+
+
+
+    </style>
 
 </head>
 
 <body>
+
+    <?php $img = get_header_image(); ?>
+    <?php $img ?>
 
     <div class="topbar w-100">
         <div class="container txtc p-0">
@@ -47,26 +93,29 @@
         <div class="container">
             <div class="row jcc aic p2">
                 <div class="col-6 p-0 txtc mobtxtl">
-                    <a href="" class="nodeco"><img src="../images/uploads/messofylogo.png" alt="" class="w-100 logo m-2">
+                    <a href="<?php echo site_url() ?>" class="nodeco"><img src="<?php echo $img ?>" alt="" class="w-100 logo m-0 p2">
                     </a>
                 </div>
                 <div class="col-6 dhide mblock txtr">
                     <i class="fas fa-bars licon"></i>
                 </div>
             </div>
-            <nav class="bod flex jcc p1 mhide">
+            <!-- Menu -->
+            <!-- <nav class="bod flex jcc p1 mhide">
                 <ul class="lstn flex m-0 cw bod p-0">
-                    <a href="" class="nodeco">
-                        <li class="px4">Home</li>
-                    </a>
-                    <a href="" class="nodeco">
-                        <li class="px4">Recipes</li>
-                    </a>
-                    <a href="" class="nodeco">
-                        <li class="px4">About</li>
-                    </a>
+                    <li class="px4"> <a href="" class="nodeco">Home </a></li>
+                    <li class="px4"><a href="" class="nodeco">Recipes </a></li>
+                    <li class="px4"> <a href="" class="nodeco">About</a></li>
                 </ul>
+            </nav> -->
+
+            <nav class="bod flex jcc p1 mhide">
+                <?php wp_nav_menu(array(
+                    'theme_location' => 'primary_menu',
+                    'menu_class' => 'testli'
+                )) ?>
             </nav>
+            <!-- Menu -->
 
 
         </div>

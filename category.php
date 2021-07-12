@@ -1,11 +1,190 @@
-<?php // get_header('header') 
-?>
+<?php get_header('header') ?>
 
-<div class="main">
+<main class="main w-100">
 
-    <h2>this is category page</h2>
+<div class="spacer"></div>
+
+<div class="container">
+
+    <div class="row jcsa">
+        <!-- Main Content -->
+        <div class="col-md-7 bod">
+
+
+
+            <div class="blog_recentpost section">
+
+                <!-- Latest Recipes -->
+                <div class="blog_recentpost-heading">
+                    <div class="card_head">
+                        <?php// echo the_title(); ?>
+                        <?php $vale = get_the_category();
+
+                        // echo '<pre>';
+                        // print_r($vale);
+                        // echo '</pre>';
+                        
+                        ?>
+                        <h3><?php echo $vale[0]->name; ?></h3>
+                        <hr class="card_head_ul">
+                    </div>
+                </div>
+
+                <div class="row">
+
+
+
+                    <!-- <div class="col-md-4 col-6 pxy2">
+                        <div class="lsdh2 txtc">
+                            <a href="" class=" nodeco">
+                                <div class="rcard_img rl">
+                                    <img src="../images/uploads/demoimg1.jpg" alt="" class="w-100 mb-3">
+                                    <div class="rcard_tag">
+                                        <span class="mtag">Breakfast</span>
+                                    </div>
+                                </div>
+                                <p class="rcard_expert"> <strong> Allo baingan</strong>
+                                </p>
+                            </a>
+                        </div>
+                    </div> -->
+
+                    <?php 
+                            // $postquery = array(
+                            //     'post_type' => 'post',
+                            //     'post_status' => 'publish',
+                            //     'order' => 'ASC'
+                            // );
+                            
+                            // $datapq = new wp_query($postquery);
+
+                            while(have_posts()){
+                                the_post();
+                                $imgpath = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
+                                
+                        ?>
+
+                            <div class="col-md-4 col-6 pxy1">
+                                <div class="lsdh2 txtc">
+                                
+                                        <div class="rcard_img rl">
+                                                <a href="<?php echo get_permalink(); ?>" class=" nodeco">
+                                                    <img src="<?php echo $imgpath[0]; ?>" alt="" class="w-100 mb-3">
+                                                </a>
+                                                <div class="rcard_tag">
+                                                <?php echo the_category(); ?>
+                                                </div>
+                                        </div>
+                                        <div class="expert">
+                                            <a href="<?php echo get_permalink(); ?>" class=" nodeco">
+                                                <p class="rcard_expert"> <strong> <?php echo the_title() ?></strong></p>
+                                            </a>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+
+                        <?php } ?>
+                   
+                    
+                    <div class="spacer"></div>
+                </div>
+                <!-- End Latest Recipes -->
+
+        
+
+            </div>
+
+
+        </div>
+        <!-- End Main Content -->
+
+
+        <!-- Sidebar -->
+        <div class="col-md-3 bod">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
+            <!-- Search Tag -->
+            <h4 class="">Search Recipes</h4>
+            <input type="text" class="instyle" placeholder="Best Of Panner">
+            <!-- End ./search Tag -->
+
+            <div class="spacer"></div>
+            <!-- Ad Place -->
+
+            <!-- ./ End Ad Place -->
+
+            <!-- New Recipes -->
+            <div>
+
+                <h4 class="">Popular Recipes</h4>
+
+                <a href="" class="nodeco">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="../images/uploads/demo3img2.jpg" alt="" class="w-100 sideimg">
+                        </div>
+                        <div class="col-8">
+                            <p class="sidelink"> Ratri Atta with Rosume | Hydrabadi Style </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="nodeco">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="../images/uploads/demo3img2.jpg" alt="" class="w-100 sideimg">
+                        </div>
+                        <div class="col-8">
+                            <p class="sidelink"> South Indian Uthpam Rasam | Hydrabadi Style </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="nodeco">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="../images/uploads/demoimg1.jpg" alt="" class="w-100 sideimg">
+                        </div>
+                        <div class="col-8">
+                            <p class="sidelink"> Allo Bukhara Egg recipes | Hydrabadi Style </p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- ./newrecipes -->
+
+            <div class="spacer"></div>
+
+            <h4 class="">Recipes Categories</h4>
+            <ul class="lstn">
+                <a href="">
+                    <li>Breakfast</li>
+                </a>
+                <a href="">
+                    <li>Dinner</li>
+                </a>
+                <li>Lunch</li>
+                <li>Sweets</li>
+                <li>Deserts</li>
+                <li>Dals</li>
+                <li>Chickens</li>
+                <li>Chickens</li>
+            </ul>
+
+
+        </div>
+        <!-- End Sidebar -->
+    </div>
+
+
 </div>
 
 
 
-<?php // get_footer('footer'); 
+</main>
+
+
+
+<?php  get_footer('footer'); ?>

@@ -111,8 +111,16 @@ blockquote {
   border-radius: 5px;
 }
 
+blockquote,
+table,
+figure {
+  margin: 2.3rem 0 !important;
+  width: 100% !important;
+}
+
 img {
-  margin-bottom: 2.3rem !important;
+  margin-bottom: 2.5rem 0 !important;
+  width: 100% !important;
 }
 
 .stag {
@@ -250,6 +258,10 @@ body {
 
 .flex {
   display: flex !important;
+}
+
+.flex_wrp {
+  flex-wrap: wrap;
 }
 
 .fdc {
@@ -546,65 +558,6 @@ body {
   .container {
     max-width: 90% !important;
   }
-}
-
-.instyle {
-  border: 1px solid #eee;
-  border-radius: 3px;
-  background-color: white;
-  width: 100%;
-  color: #191919;
-  outline: none;
-  padding: 0.8rem;
-}
-
-.instyle:focus {
-  border: 1px solid #b4b4b4 !important;
-}
-
-button {
-  border: none;
-  background-color: brown;
-  color: white;
-  padding: 1rem;
-}
-
-.sbtn {
-  padding: 0.8rem;
-  border: 1px solid #eee;
-  border-radius: 6px;
-  background-color: #ffffff;
-  transition: all 0.2s ease;
-}
-
-.sbtn:hover {
-  background-color: #f7f7f7;
-}
-
-.mbtn {
-  padding: 1rem;
-  border: 1px solid #eee;
-  border-radius: 6px;
-  background-color: #ffffff;
-  transition: all 0.2s ease;
-}
-
-.mbtn:hover {
-  background-color: #f7f7f7;
-}
-
-.lbtn {
-  padding: 1rem;
-  border: 1px solid #eee;
-  border-radius: 3px;
-  color: #fff;
-  font-size: 2rem;
-  background-color: #191919;
-  transition: all 0.2s ease;
-}
-
-.lbtn:hover {
-  background-color: #f7f7f7;
 }
 
 .section-xs,
@@ -908,6 +861,13 @@ th, td {
 
 tr:nth-child(odd) {
   background-color: #f3f6fd;
+}
+
+.mes_tag {
+  background-color: #fff5ec;
+  color: brown;
+  margin: .3rem;
+  padding: 0 1rem;
 }
 
 .error {

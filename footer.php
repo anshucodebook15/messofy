@@ -1,4 +1,8 @@
   <!-- Footer Section -->
+  
+  <?php $img = get_header_image(); ?>
+    <?php $img ?>
+  
   <div class="spacer"></div>
 
   <footer class="footer_1 p3">
@@ -9,8 +13,8 @@
               <div class="col-md-10">
                   <div class="row jcsb">
                       <div class="col-md-6 pxy2 bod">
-                          <a href="" class="nodeco"><img src="../images/uploads/messofylogo.png" alt="" class="w-100 logo m-2">
-                          </a>
+                      <a href="<?php echo site_url() ?>" class="nodeco"><img src="<?php echo $img ?>" alt="" class="w-100 logo m-0 p2">
+                    </a>
                           <p class="p1 mtag">Eat Healthy with our best food recipes, drinks, desert bevrages and all,
                               Messofy is here to server you.
                           </p>

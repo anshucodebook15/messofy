@@ -3,7 +3,7 @@
 
 // This Function Is used for nav menu
 register_nav_menus(
-    array("mymenu" => "Header Menu")
+    array("primary_menu" => "Header Menu")
 );
 
 // Featured Image Thumbnail Enabling

@@ -1,0 +1,178 @@
+username : themedev
+password: testtheme56
+
+
+
+...
+first Necessory Pages to create
+1.  style.css           Done
+2.  Screenshot.png      Done
+3.  functions.php       Done
+4.  index.php           Done
+5.  header.php          Done
+6.  footer.php          Done
+7.  page.php            Done
+
+
+...
+pages => 
+
+// Includes 
+        header.php
+        footer.php
+        si
+
+...
+// Page.php
+// Index.php
+// Single.php
+// Category.php
+// 404.php
+
+
+...
+// Pages
+        // Home
+        // Blog Page  => All Blog Page
+        // Post page => 
+        // Pages =>
+        // Category page =>
+        // 404 page 
+        // Sidebar =>
+
+
+...
+// All Wordpress Development Theme Development Function
+
+
+...
+// 1. Gives you full path of your wp theme directory
+
+        get_template_directory_uri();   // this will get the url of the Body
+        
+        bloginfo('template_directory');
+
+...
+// 2. Menu 
+
+        register_nav_menus()
+        wp_nav_menu()
+
+
+...
+// 3. Site url and title
+
+        site_url()      // Gives you full path till the url
+        the_title()     // Gives you page title
+
+// 4. Page Content In Wordpress
+
+        the_content()           // It Brings the Page Content In Wordpress
+        echo  get_the_content()       // Echo It Also brings the Content but You have to use Echo Here
+
+// 5. Enabling Support For Featured Image In Post
+
+        add_theme_support('post-thumbnails');  // It Will Enable Option for Wordpress Theme Featured Image
+
+        the_post_thumbnail()                   // It will Show Thumbnail Image in post or page 
+
+        wp_get_attachement_image_src();        // this will get image url 
+        ex: 
+                <?php $imgpath = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium'); ?>
+
+                <?php print_r($imgpath) ?>
+
+                <img src="<?php echo $imgpath[0]; ?>" alt="">
+
+// 6. Add Custom Header image and logo In wordpress 
+
+        add_theme_support('Custom-header'); // this will Enable the options for header image
+
+        get_header_image();                 // This will call the image in page section
+
+// 7. Custom page template
+
+        Crete a page give any name 
+                        and Include this exact phrase
+                        //Template Name: Contactus new 
+        
+// 8. To change Navigation active effect then Change 
+
+
+// Problems
+        // Content Problem
+        // Page Problem 
+        // Navigation Problem Or Menu 
+        // Featured Image In Post
+        // How to create custom page Dynamic 
+
+
+// Display Post on Wordpress
+
+        // have_post()
+        // The_post()
+
+
+        // Short Description => the_expert()
+        // title => the_title()
+        // date => echo get_the_date()
+
+// add pagination
+
+        // Displaying content of single post
+        // the_permalink();
+        // the_content();
+        // the_author();
+        // get_the_date();
+
+// Dynamic Widget
+
+
+
+
+// Sitetitle
+
+        // bloginfo('name')
+        // bloginfo('description');
+        // wp_title();
+        // is_front_page();
+
+// Custom Background
+
+        // 
+
+
+
+
+
+// Task 
+
+        1. Navigation  Done
+        2. Header Logo Done
+        3. Page Content   Done
+        4. Breadcrumb    Done 
+        4. All Blog Posts 
+                => Category Display Done  
+                => orderby limit For All Posts and 
+        6. BlogPost_page    Done
+        7. Category Page Done
+        8. Auther Page 
+        9. All Blog Page
+
+
+
+
+// Home Page
+
+        latest Recipes
+              => recipes With recent published Done;
+                   => wp-query
+
+              => Taxonomy = Category
+
+                => Two methods to get categories
+                get_category_links();
+                   $cat = get_categories(array('taxonomy' => 'category));
+
+                   $cate = get_terms(['taxonomy' => 'category'])
+

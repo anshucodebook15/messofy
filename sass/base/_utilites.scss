@@ -53,6 +53,10 @@
   display: flex !important;
 }
 
+.flex_wrp{
+  flex-wrap: wrap;
+}
+
 .fdc {
   flex-direction: column;
 }
