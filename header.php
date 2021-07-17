@@ -5,17 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+
+    <!-- meta Tags  -->
+    <title><?php echo wp_title(); ?></title>
+    
+
+    <!-- End Meta Tags -->
 
 
-    <base href="">
+   <?php  wp_head(); ?>
+
+
 
     <!-- Bootstrap Css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- End Bootstrap -->
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/36a236c794.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!-- End Font Awesome -->
 
     <!-- Google Font Link -->
@@ -35,42 +42,57 @@
     <!-- End Css Link -->
 
     <style>
-        .testli {
-            list-style-type: none;
-            display: flex;
-            margin: 0 !important;
-            width: max-content;
-            padding: 0;
+
+
+
+        .mes_tag li{
+            list-style: none;
+            padding: 0 !important;
+
         }
 
-        .testli li {
-            padding: .3rem 2rem .5rem 2rem !important;
-        }
-
-        .testli a {
-            text-decoration: none;
-        }
-
-        .current-menu-item>a {
-            color: #000 !important;
-        }
-
-
-        /* Categories Styles */
-
-        .rcard_tag ul {
-            list-style: none !important;
+        .mes_tag ul{
             padding: 0 !important;
             margin: 0 !important;
         }
 
-        .rcard_tag a{
+        .mes_tag a{
             text-decoration: none;
-            font-size: 1.6rem;
+            font-size: 1.5rem
         }
 
-        
+        .widget{
+            list-style: none;
+            margin-bottom: 2rem !important;
+        }
 
+        .searchform label{
+            display:none;
+            
+        }
+
+        .searchform input{
+            border: 1px solid #eee;
+            padding: .4rem;
+        }
+
+        .widgettitle{
+            font-size: 2.4rem;
+            font-weight: 500;
+        }
+
+        #searchsubmit{
+            background-color: brown;
+            color: #fff;
+        }
+
+        .screen-reader-text{
+            content: '';
+        }
+
+        .cat-item{
+            list-style: none;
+        }
 
 
     </style>
@@ -97,7 +119,7 @@
                     </a>
                 </div>
                 <div class="col-6 dhide mblock txtr">
-                    <i class="fas fa-bars licon"></i>
+                    <i class="fas fa-bars licon nav_hb"></i>
                 </div>
             </div>
             <!-- Menu -->
@@ -116,6 +138,21 @@
                 )) ?>
             </nav>
             <!-- Menu -->
+
+
+            <!-- mobile_menu -->
+
+            <div class="mob_menu dn">
+                <nav class="bod flex jcc p1">
+                    <?php wp_nav_menu(array(
+                        'theme_location' => 'primary_menu',
+                        'menu_class' => 'testli'
+                    )) ?>
+                </nav>
+            </div>
+
+
+
 
 
         </div>

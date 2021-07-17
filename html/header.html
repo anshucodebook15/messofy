@@ -99,6 +99,17 @@
                 </div>
             </div>
         </div>
+
+        <div class="mob_nav dn ">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Free</a></li>
+                <li><a href="">Try</a></li>
+                <li><a href="">Dont</a></li>
+            </ul>
+        </div>
+
+
     </header>
     <!-- End Header -->
 
@@ -132,6 +143,14 @@
 
     <!-- Main Script Tag -->
     <script>
+
+
+        $(".nav_hb").click(function () {
+            $(".mob_nav").toggle('fast', 'swing');
+        });
+
+
+
         $('.logo_slider').slick({
 
             slidesToShow: 4,

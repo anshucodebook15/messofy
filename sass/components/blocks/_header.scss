@@ -9,3 +9,47 @@
 .logotxt {
   font-size: 2rem;
 }
+
+// ***************************************************************************************************** //
+
+// Header Css
+.testli {
+  list-style-type: none;
+  display: flex;
+  margin: 0 !important;
+  width: max-content;
+  padding: 0;
+}
+
+.testli li {
+  padding: 0.3rem 2rem 0.5rem 2rem !important;
+}
+
+.testli a {
+  text-decoration: none;
+}
+
+.current-menu-item > a {
+  color: #000 !important;
+}
+
+/* Categories Styles */
+
+.rcard_tag ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.rcard_tag a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 780px) {
+  .testli {
+    flex-direction: column;
+  }
+}
+
+// Header Css

@@ -73,6 +73,14 @@
 
   <!-- Main Script Tag -->
   <script>
+
+        $(".nav_hb").click(function () {
+            $(".mob_menu").toggle('fast', 'linear');
+        });
+
+
+
+
       $('.logo_slider').slick({
 
           slidesToShow: 4,
@@ -89,6 +97,11 @@
               }
           }]
       });
+
+
+
+
+
   </script>
   <!-- Main Script Tag -->
 

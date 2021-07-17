@@ -100,62 +100,77 @@
         <!-- End Main Content -->
 
 
-        <!-- Sidebar -->
-        <div class="col-md-3 bod">
+       <!-- Sidebar -->
+       <div class="col-md-3 bod">
             <div class="spacer"></div>
             <div class="spacer"></div>
 
-            <!-- Search Tag -->
-            <h4 class="">Search Recipes</h4>
-            <input type="text" class="instyle" placeholder="Best Of Panner">
-            <!-- End ./search Tag -->
+            <?php dynamic_sidebar('sidebar'); ?>
 
-            <div class="spacer"></div>
+  
             <!-- Ad Place -->
 
             <!-- ./ End Ad Place -->
 
             <!-- New Recipes -->
-            <div>
+            <div class="spacer"></div>
+            <h4 class="bold5">Popular Recipes</h4>
+            <div class="spacer"></div>
 
-                <h4 class="">Popular Recipes</h4>
+            <?php 
+                            $postquery = array(
+                                'post_type' => 'post',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 5,
+                                'order' => 'ASC'
+                            );
+                            
+                            $datapr = new wp_query($postquery);
 
-                <a href="" class="nodeco">
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="../images/uploads/demo3img2.jpg" alt="" class="w-100 sideimg">
-                        </div>
-                        <div class="col-8">
-                            <p class="sidelink"> Ratri Atta with Rosume | Hydrabadi Style </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="nodeco">
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="../images/uploads/demo3img2.jpg" alt="" class="w-100 sideimg">
-                        </div>
-                        <div class="col-8">
-                            <p class="sidelink"> South Indian Uthpam Rasam | Hydrabadi Style </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="nodeco">
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="../images/uploads/demoimg1.jpg" alt="" class="w-100 sideimg">
-                        </div>
-                        <div class="col-8">
-                            <p class="sidelink"> Allo Bukhara Egg recipes | Hydrabadi Style </p>
-                        </div>
-                    </div>
-                </a>
+                            while($datapr->have_posts()){
+                                $datapr->the_post();
 
-            </div>
+                                $imgpathpr = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
+                                
+                        ?>
+
+            <a href="<?php echo get_permalink(); ?>" class="nodeco">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="<?php echo $imgpathpr[0]; ?>" alt="" class="w-100 sideimg lshd">
+                    </div>
+                    <div class="col-8">
+                        <p class="sidelink"> <?php echo the_title(); ?> </p>
+                    </div>
+                </div>
+            </a>
+            <!-- <a href="" class="nodeco">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="../images/uploads/demo3img2.jpg" alt="" class="w-100 sideimg">
+                    </div>
+                    <div class="col-8">
+                        <p class="sidelink"> South Indian Uthpam Rasam | Hydrabadi Style </p>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="nodeco">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="../images/uploads/demoimg1.jpg" alt="" class="w-100 sideimg">
+                    </div>
+                    <div class="col-8">
+                        <p class="sidelink"> Allo Bukhara Egg recipes | Hydrabadi Style </p>
+                    </div>
+                </div>
+            </a> -->
+
+            <?php  } ?>
+
 
             <!-- ./newrecipes -->
 
-            <div class="spacer"></div>
+            <!-- <div class="spacer"></div>
 
             <h4 class="">Recipes Categories</h4>
             <ul class="lstn">
@@ -171,7 +186,7 @@
                 <li>Dals</li>
                 <li>Chickens</li>
                 <li>Chickens</li>
-            </ul>
+            </ul> -->
 
 
         </div>

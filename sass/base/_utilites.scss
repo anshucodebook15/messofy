@@ -5,11 +5,11 @@
 
 // a
 .nodeco {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .nodeco:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 // li
@@ -108,6 +108,10 @@
 //   font-size: 3rem !important;
 //   // background-color: red;
 // }
+
+.grid{
+  display: grid;
+}
 
 @media screen and (max-width: 780px) {
   .mobtxtl {

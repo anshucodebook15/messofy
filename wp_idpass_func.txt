@@ -156,8 +156,16 @@ pages =>
                 => orderby limit For All Posts and 
         6. BlogPost_page    Done
         7. Category Page Done
-        8. Auther Page 
-        9. All Blog Page
+        8. Auther Page   Inupdate...
+        9. All Blog Page        Done
+        10. Search Page  Inupdate...             
+        11. Site SEO with image Alt tags Inupdate ...
+        12. Header Seo  All Meta Tags Completed Done
+        13. Messofy Content Update  and check SEO settings
+        13. Widget Side bar 
+        14. Git Push Content
+        15. 
+        
 
 
 
