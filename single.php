@@ -16,9 +16,11 @@ the_post();
 
                 <div class="spacer"></div>
 
+                
+
                 <?php $testcat = get_the_category(); ?>
                 <!-- BreadCrumb -->
-                <p class="mtag diml"> <a href="<?php echo site_url(); ?>">Home</a><i class="fas fa-angle-double-right px1"></i> Recipes <i
+                <p class="mtag diml"> <a href="<?php echo site_url(); ?>">Home</a><i class="fas fa-angle-double-right px1"></i> <a href="<?php echo site_url() . '/recipes/' ?>">Recipes</a>  <i
                         class="fas fa-angle-double-right px1"></i> <?php echo $testcat[0]->name ?> </p>
                 <!-- ./Breadcrumb -->
                                
@@ -133,11 +135,14 @@ the_post();
                                
                                     <div class="rcard_img rl">
                                             <a href="<?php echo get_permalink(); ?>" class=" nodeco">
-                                                <img src="<?php echo $rel_imgpath[0]; ?>" alt="" class="w-100 mb-3">
+                                                <img src="<?php echo $rel_imgpath[0]; ?>" alt="" class="w-100 mb-1">
                                             </a>
-                                            <div class="rcard_tag">
+                                            <!-- <div class="rcard_tag">
                                                <?php echo the_category(); ?>
-                                            </div>
+                                            </div> -->
+                                    </div>
+                                    <div class="rcard_cat">
+                                            <?php echo the_category(); ?>
                                     </div>
                                     <div class="expert">
                                         <a href="<?php echo get_permalink(); ?>" class=" nodeco">
@@ -257,11 +262,7 @@ the_post();
 
 </div>
 
-
-
 </main>
-
-
 
 
 <?php  get_footer('footer'); 

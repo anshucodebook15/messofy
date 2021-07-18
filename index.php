@@ -56,11 +56,14 @@ the_post() ?>
                             <h3 class="mb2"><?php echo the_title(); ?></h3>
                         </a>
 
-                        <div class="mes_tag cw m-0">
+                        <!-- <div class="mes_tag cw m-0">
+                            <?php echo the_category(); ?>
+                        </div> -->
+                        <div class="rcard_cat cw m-0">
                             <?php echo the_category(); ?>
                         </div>
 
-                        <p class="stag m3 mhide">By <a href="" class="nodeco"> Shambhavi Singh</a>
+                        <p class="stag m2 mhide">By <a href="" class="nodeco"> Shambhavi Singh</a>
                         </p>
 
                         <a href="<?php echo get_permalink(); ?>" class="nodeco"> <button> Read more..</button></a>

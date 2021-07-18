@@ -32,23 +32,6 @@
 
                 <div class="row">
 
-
-
-                    <!-- <div class="col-md-4 col-6 pxy2">
-                        <div class="lsdh2 txtc">
-                            <a href="" class=" nodeco">
-                                <div class="rcard_img rl">
-                                    <img src="../images/uploads/demoimg1.jpg" alt="" class="w-100 mb-3">
-                                    <div class="rcard_tag">
-                                        <span class="mtag">Breakfast</span>
-                                    </div>
-                                </div>
-                                <p class="rcard_expert"> <strong> Allo baingan</strong>
-                                </p>
-                            </a>
-                        </div>
-                    </div> -->
-
                     <?php 
                             // $postquery = array(
                             //     'post_type' => 'post',
@@ -69,11 +52,15 @@
                                 
                                         <div class="rcard_img rl">
                                                 <a href="<?php echo get_permalink(); ?>" class=" nodeco">
-                                                    <img src="<?php echo $imgpath[0]; ?>" alt="" class="w-100 mb-3">
+                                                    <img src="<?php echo $imgpath[0]; ?>" alt="" class="w-100 mb-1">
                                                 </a>
-                                                <div class="rcard_tag">
+                                                <!-- <div class="rcard_tag">
                                                 <?php echo the_category(); ?>
-                                                </div>
+                                                </div> -->
+                                        </div>
+
+                                        <div class="rcard_cat">
+                                            <?php echo the_category(); ?>
                                         </div>
                                         <div class="expert">
                                             <a href="<?php echo get_permalink(); ?>" class=" nodeco">
@@ -114,10 +101,10 @@
 
             <!-- New Recipes -->
             <div class="spacer"></div>
-            <h4 class="bold5">Popular Recipes</h4>
+             <h4 class="bold5">Popular Recipes</h4>
             <div class="spacer"></div>
 
-            <?php 
+                      <?php 
                             $postquery = array(
                                 'post_type' => 'post',
                                 'post_status' => 'publish',
@@ -134,59 +121,18 @@
                                 
                         ?>
 
-            <a href="<?php echo get_permalink(); ?>" class="nodeco">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="<?php echo $imgpathpr[0]; ?>" alt="" class="w-100 sideimg lshd">
-                    </div>
-                    <div class="col-8">
-                        <p class="sidelink"> <?php echo the_title(); ?> </p>
-                    </div>
-                </div>
-            </a>
-            <!-- <a href="" class="nodeco">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="../images/uploads/demo3img2.jpg" alt="" class="w-100 sideimg">
-                    </div>
-                    <div class="col-8">
-                        <p class="sidelink"> South Indian Uthpam Rasam | Hydrabadi Style </p>
-                    </div>
-                </div>
-            </a>
-            <a href="" class="nodeco">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="../images/uploads/demoimg1.jpg" alt="" class="w-100 sideimg">
-                    </div>
-                    <div class="col-8">
-                        <p class="sidelink"> Allo Bukhara Egg recipes | Hydrabadi Style </p>
-                    </div>
-                </div>
-            </a> -->
+                            <a href="<?php echo get_permalink(); ?>" class="nodeco">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="<?php echo $imgpathpr[0]; ?>" alt="" class="w-100 sideimg lshd">
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="sidelink"> <?php echo the_title(); ?> </p>
+                                    </div>
+                                </div>
+                            </a>
 
             <?php  } ?>
-
-
-            <!-- ./newrecipes -->
-
-            <!-- <div class="spacer"></div>
-
-            <h4 class="">Recipes Categories</h4>
-            <ul class="lstn">
-                <a href="">
-                    <li>Breakfast</li>
-                </a>
-                <a href="">
-                    <li>Dinner</li>
-                </a>
-                <li>Lunch</li>
-                <li>Sweets</li>
-                <li>Deserts</li>
-                <li>Dals</li>
-                <li>Chickens</li>
-                <li>Chickens</li>
-            </ul> -->
 
 
         </div>
@@ -195,8 +141,6 @@
 
 
 </div>
-
-
 
 </main>
 

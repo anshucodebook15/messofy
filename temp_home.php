@@ -51,12 +51,12 @@ get_header('header') ?>
                                 
                                         <div class="rcard_img rl">
                                                 <a href="<?php echo get_permalink(); ?>" class=" nodeco">
-                                                    <img src="<?php echo $imgpath[0]; ?>" alt="" class="w-100 mb-3">
+                                                    <img src="<?php echo $imgpath[0]; ?>" alt="" class="w-100 mb-1">
                                                 </a>
-                                                <div class="rcard_tag">
-                                                <?php echo the_category(); ?>
-                                                </div>
                                         </div>
+                                        <div class="rcard_cat">
+                                            <?php echo the_category(); ?>
+                                        </div>  
                                         <div class="expert">
                                             <a href="<?php echo get_permalink(); ?>" class=" nodeco">
                                                 <p class="rcard_expert"> <strong> <?php echo the_title() ?></strong></p>
@@ -178,9 +178,12 @@ get_header('header') ?>
                                             <a href="<?php echo get_permalink(); ?>" class=" nodeco">
                                                 <img src="<?php echo $imgpath3[0]; ?>" alt="" class="w-100 mb-3">
                                             </a>
-                                            <div class="rcard_tag">
-                                               <?php echo the_category(); ?>
-                                            </div>
+                                            <!-- <div class="rcard_tag">
+                                               <?php // echo the_category(); ?>
+                                            </div> -->
+                                    </div>
+                                    <div class="rcard_cat">
+                                            <?php echo the_category(); ?>
                                     </div>
                                     <div class="expert">
                                         <a href="<?php echo get_permalink(); ?>" class=" nodeco">

@@ -43,9 +43,7 @@
 
     <style>
 
-
-
-        .mes_tag li{
+        /* .mes_tag li{
             list-style: none;
             padding: 0 !important;
 
@@ -92,7 +90,7 @@
 
         .cat-item{
             list-style: none;
-        }
+        } */
 
 
     </style>
@@ -150,6 +148,8 @@
                     )) ?>
                 </nav>
             </div>
+
+            <!-- End Mobile Menu -->
 
 
 
