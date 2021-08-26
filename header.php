@@ -10,6 +10,8 @@
     <!-- meta Tags  -->
     <title><?php echo wp_title(); ?></title>
 
+    <script data-ad-client="ca-pub-2002591565266906" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
     <?php  wp_head(); ?>
 	
     <!-- Bootstrap Css -->
@@ -30,7 +32,7 @@
     <!-- End Css Link -->
 
 
-    <script data-ad-client="ca-pub-2002591565266906" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 
 
 </head>
