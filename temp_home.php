@@ -77,7 +77,7 @@ get_header('header') ?>
 
 
 
-                    <!-- Best Indian Deserts Recipes -->
+                    <!-- Best Breakfast Recipes -->
                     <div class="blog_recentpost-heading">
                         <div class="card_head">
                             <h3>Best Breakfast Recipes</h3>
@@ -108,23 +108,6 @@ get_header('header') ?>
 
                      ?>
 
-                        <!-- <div class="col-md-4 col-6 pxy1">
-                            <div class="lsdh2 txtc">
-                                
-                                <a href="<?php echo get_permalink(); ?>" class=" nodeco">
-                                    <div class="rcard_img rl">
-                                        <img src="<?php echo $imgpath2[0] ?>" alt="" class="w-100 mb-3">
-                                        <div class="rcard_tag">
-                                            <span class="mtag">Deserts</span>
-                                        </div>
-                                    </div>
-                                    <p class="rcard_expert"> <strong> <?php echo the_title(); ?></strong>
-                                    </p>
-                                </a>
-                            </div>
-                        </div> -->
-
-
 
 
                         <div class="col-md-4 col-6 pxy1">
@@ -152,14 +135,76 @@ get_header('header') ?>
 
                         <div class="spacer"></div>
                     </div>
-                    <!-- End Best Indian Deserts -->
+                    <!-- End Best Breakfast Recipes -->
+
+
+
+
+                    <!-- Best Chiness Recipes -->
+                    <div class="blog_recentpost-heading">
+                        <div class="card_head">
+                            <h3>Best Chiness Recipes</h3>
+                            <hr class="card_head_ul">
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                     <?php 
+                    
+                        $postquery = array(
+                            'post_type' => 'post',
+                            'post_status' => 'publish',
+                            'tax_query' => array([
+                                'taxonomy' => 'category',
+                                'field' => 'term_id',
+                                'terms' => 3
+                            ])
+                            );
+                        
+                        $datapq = new wp_query($postquery);
+
+                        while($datapq->have_posts()){
+                            $datapq->the_post();
+                        
+                            $imgpath2 = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
+
+                     ?>
+
+
+                        <div class="col-md-4 col-6 pxy1">
+                                <div class="lsdh2 txtc">
+                                
+                                        <div class="rcard_img rl">
+                                                <a href="<?php echo get_permalink(); ?>" class=" nodeco">
+                                                    <img src="<?php echo $imgpath2[0]; ?>" alt="" class="w-100 mb-1">
+                                                </a>
+                                        </div>
+                                        <div class="rcard_cat">
+                                            <?php echo the_category(); ?>
+                                        </div>  
+                                        <div class="expert">
+                                            <a href="<?php echo get_permalink(); ?>" class=" nodeco">
+                                                <p class="rcard_expert"> <strong> <?php echo the_title() ?></strong></p>
+                                            </a>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+
+                        <?php } ?>
+                      
+
+                        <div class="spacer"></div>
+                    </div>
+                    <!-- End chiness recipess -->
 
 
 
                     <!-- Best Indian Deserts Recipes -->
                     <div class="blog_recentpost-heading">
                         <div class="card_head">
-                            <h3>Biryanies</h3>
+                            <h3>Biryanies </h3>
                             <hr class="card_head_ul">
                         </div>
                     </div>
