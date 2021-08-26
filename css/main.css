@@ -1228,6 +1228,13 @@ tr:nth-child(odd) {
   padding: 0.4rem 0.7rem;
 }
 
+.sideimg {
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px #e1dede;
+}
+
 @media screen and (max-width: 780px) {
   .testli {
     flex-direction: column;

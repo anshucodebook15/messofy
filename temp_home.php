@@ -20,7 +20,7 @@ get_header('header') ?>
                     <div class="blog_recentpost-heading">
                         <div class="card_head">
                             <div class="row">
-                                <h3>Latest Recipes</h3>
+                                <h3>Our Best Food Recipes for you</h3>
                                
                             </div>
                             <hr class="card_head_ul">
@@ -34,10 +34,8 @@ get_header('header') ?>
                             $postquery = array(
                                 'post_type' => 'post',
                                 'post_status' => 'publish',
-                                'orderby'   => array(
-                                    'date' =>'DESC',
-                                   )
-                               
+
+                                
                             );
                             
                             $datapq = new wp_query($postquery);
