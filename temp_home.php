@@ -12,7 +12,7 @@ get_header('header') ?>
 
         <div class="row jcsa">
             <!-- Main Content -->
-            <div class="col-md-7 bod">
+            <div class="col-md-8 bod">
 
                 <div class="blog_recentpost section">
 
@@ -100,7 +100,7 @@ get_header('header') ?>
 
                      ?>
 
-                        <div class="col-md-4 col-6 pxy1">
+                        <!-- <div class="col-md-4 col-6 pxy1">
                             <div class="lsdh2 txtc">
                                 
                                 <a href="<?php echo get_permalink(); ?>" class=" nodeco">
@@ -114,7 +114,30 @@ get_header('header') ?>
                                     </p>
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
+
+
+
+
+                        <div class="col-md-4 col-6 pxy1">
+                                <div class="lsdh2 txtc">
+                                
+                                        <div class="rcard_img rl">
+                                                <a href="<?php echo get_permalink(); ?>" class=" nodeco">
+                                                    <img src="<?php echo $imgpath2[0]; ?>" alt="" class="w-100 mb-1">
+                                                </a>
+                                        </div>
+                                        <div class="rcard_cat">
+                                            <?php echo the_category(); ?>
+                                        </div>  
+                                        <div class="expert">
+                                            <a href="<?php echo get_permalink(); ?>" class=" nodeco">
+                                                <p class="rcard_expert"> <strong> <?php echo the_title() ?></strong></p>
+                                            </a>
+                                        </div>
+                                    
+                                </div>
+                            </div>
 
                         <?php } ?>
                       
@@ -139,9 +162,9 @@ get_header('header') ?>
 
                         <?php $cat_all = get_terms(['taxonomy' => 'category']);
                         
-                        // echo '<pre>';
-                        // print_r($cat_all);
-                        // echo '</pre>';
+                        echo '<pre>';
+                        print_r($cat_all);
+                        echo '</pre>';
 
                         // Bring Biryani Category Posts
                         $biryani_posts = array(
@@ -170,29 +193,25 @@ get_header('header') ?>
 
                         ?>
 
-
                         <div class="col-md-4 col-6 pxy1">
-                            <div class="lsdh2 txtc">
-                               
-                                    <div class="rcard_img rl">
-                                            <a href="<?php echo get_permalink(); ?>" class=" nodeco">
-                                                <img src="<?php echo $imgpath3[0]; ?>" alt="" class="w-100 mb-3">
-                                            </a>
-                                            <!-- <div class="rcard_tag">
-                                               <?php // echo the_category(); ?>
-                                            </div> -->
-                                    </div>
-                                    <div class="rcard_cat">
-                                            <?php echo the_category(); ?>
-                                    </div>
-                                    <div class="expert">
-                                        <a href="<?php echo get_permalink(); ?>" class=" nodeco">
-                                            <p class="rcard_expert"> <strong> <?php echo the_title() ?></strong></p>
-                                        </a>
-                                    </div>
+                                <div class="lsdh2 txtc">
                                 
+                                        <div class="rcard_img rl">
+                                                <a href="<?php echo get_permalink(); ?>" class=" nodeco">
+                                                    <img src="<?php echo $imgpath3[0]; ?>" alt="" class="w-100 mb-1">
+                                                </a>
+                                        </div>
+                                        <div class="rcard_cat">
+                                            <?php echo the_category(); ?>
+                                        </div>  
+                                        <div class="expert">
+                                            <a href="<?php echo get_permalink(); ?>" class=" nodeco">
+                                                <p class="rcard_expert"> <strong> <?php echo the_title() ?></strong></p>
+                                            </a>
+                                        </div>
+                                    
+                                </div>
                             </div>
-                        </div>
 
 
 

@@ -8,9 +8,21 @@
 
     <!-- meta Tags  -->
     <title><?php echo wp_title(); ?></title>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SCDYBW3464"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SCDYBW3464');
+</script>
     
 
     <!-- End Meta Tags -->
+	
+	<meta name="google-site-verification" content="iGr3Z5ZOocMnIBJIpzP9-HKK7cd6p5VN8V8WT3sinlo" />
 
 
    <?php  wp_head(); ?>

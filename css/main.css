@@ -1060,12 +1060,19 @@ tr:nth-child(odd) {
   overflow: hidden !important;
 }
 
+.rcard_img img {
+  height: 21rem;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0px 4px 10px #e3e3e3;
+}
+
 .rcard_tag {
   position: absolute;
   bottom: 1rem;
   left: 0;
   background-color: #fff4f4;
-  padding: .3rem .8rem;
+  padding: 0.3rem 0.8rem;
 }
 
 .rcard_expert {
@@ -1088,6 +1095,9 @@ tr:nth-child(odd) {
   }
   .hero_img {
     width: 80%;
+  }
+  .rcard_img img {
+    height: 19rem;
   }
 }
 
