@@ -201,10 +201,130 @@ get_header('header') ?>
 
 
 
-                    <!-- Best Indian Deserts Recipes -->
+                    <!-- Best Indian Drinks -->
                     <div class="blog_recentpost-heading">
                         <div class="card_head">
-                            <h3>Biryanies </h3>
+                            <h3>Best Indian Drinks</h3>
+                            <hr class="card_head_ul">
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                     <?php 
+                    
+                        $postquery = array(
+                            'post_type' => 'post',
+                            'post_status' => 'publish',
+                            'tax_query' => array([
+                                'taxonomy' => 'category',
+                                'field' => 'term_id',
+                                'terms' => 4
+                            ])
+                            );
+                        
+                        $datapq = new wp_query($postquery);
+
+                        while($datapq->have_posts()){
+                            $datapq->the_post();
+                        
+                            $imgpath2 = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
+
+                     ?>
+
+
+                        <div class="col-md-4 col-6 pxy1">
+                                <div class="lsdh2 txtc">
+                                
+                                        <div class="rcard_img rl">
+                                                <a href="<?php echo get_permalink(); ?>" class=" nodeco">
+                                                    <img src="<?php echo $imgpath2[0]; ?>" alt="" class="w-100 mb-1">
+                                                </a>
+                                        </div>
+                                        <div class="rcard_cat">
+                                            <?php echo the_category(); ?>
+                                        </div>  
+                                        <div class="expert">
+                                            <a href="<?php echo get_permalink(); ?>" class=" nodeco">
+                                                <p class="rcard_expert"> <strong> <?php echo the_title() ?></strong></p>
+                                            </a>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+
+                        <?php } ?>
+                      
+
+                        <div class="spacer"></div>
+                    </div>
+                    <!-- End Best Indian Drinks -->
+
+                    <!-- Best Fasting/Vrat recipes -->
+                    <div class="blog_recentpost-heading">
+                        <div class="card_head">
+                            <h3>Best Fasts or Vrat recipes</h3>
+                            <hr class="card_head_ul">
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                     <?php 
+                    
+                        $postquery = array(
+                            'post_type' => 'post',
+                            'post_status' => 'publish',
+                            'tax_query' => array([
+                                'taxonomy' => 'category',
+                                'field' => 'term_id',
+                                'terms' => 210
+                            ])
+                            );
+                        
+                        $datapq = new wp_query($postquery);
+
+                        while($datapq->have_posts()){
+                            $datapq->the_post();
+                        
+                            $imgpath2 = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
+
+                     ?>
+
+
+                        <div class="col-md-4 col-6 pxy1">
+                                <div class="lsdh2 txtc">
+                                
+                                        <div class="rcard_img rl">
+                                                <a href="<?php echo get_permalink(); ?>" class=" nodeco">
+                                                    <img src="<?php echo $imgpath2[0]; ?>" alt="" class="w-100 mb-1">
+                                                </a>
+                                        </div>
+                                        <div class="rcard_cat">
+                                            <?php echo the_category(); ?>
+                                        </div>  
+                                        <div class="expert">
+                                            <a href="<?php echo get_permalink(); ?>" class=" nodeco">
+                                                <p class="rcard_expert"> <strong> <?php echo the_title() ?></strong></p>
+                                            </a>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+
+                        <?php } ?>
+                      
+
+                        <div class="spacer"></div>
+                    </div>
+                    <!-- Best Fasts or Vrat recipes -->
+
+
+
+                    <!-- Snacks Recepies -->
+                    <div class="blog_recentpost-heading">
+                        <div class="card_head">
+                            <h3>Chatpate Snacks Recipes</h3>
                             <hr class="card_head_ul">
                         </div>
                     </div>
@@ -226,7 +346,7 @@ get_header('header') ?>
                             'tax_query' => array([
                                 'taxonomy' => 'category',
                                 'field' => 'term_id',
-                                'terms' => 8
+                                'terms' => 209
                             ])
                             );
 
@@ -269,30 +389,10 @@ get_header('header') ?>
 
 
                         <?php } ?>
-  
-
-
-               
-               
-                        
-                        <div class="col-md-4 col-6 pxy1">
-                            <div class="lsdh2 txtc">
-                                <a href="" class=" nodeco">
-                                    <div class="rcard_img rl">
-                                        <img src="../images/uploads/demoimg1.jpg" alt="" class="w-100 mb-3">
-                                        <div class="rcard_tag">
-                                            <span class="mtag">Category</span>
-                                        </div>
-                                    </div>
-                                    <p class="rcard_expert"> <strong> Panner Do pyaja</strong>
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                        
+    
                         
                     </div>
-                    <!-- End Best Indian Deserts -->
+                    <!-- Best Indian Snack Recepies -->
 
             
                 </div>
