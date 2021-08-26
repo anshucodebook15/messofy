@@ -34,6 +34,7 @@ get_header('header') ?>
                             $postquery = array(
                                 'post_type' => 'post',
                                 'post_status' => 'publish',
+                                'orderby'=> 'post_date',
                                 'order' => 'DESC'
                             );
                             
