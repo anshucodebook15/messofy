@@ -28,19 +28,19 @@
                       <div class="col-md-3 col-6 pxy2 bod">
                           <h4 class="p1 ltag">Quick Links</h4>
                           <ul class="lstn p-0 m-0">
-                              <li class=""> <a href="" class="nodeco footer_1--links mtag">Home</a>
-                              <li class=""> <a href="" class="nodeco footer_1--links mtag">Recipes</a>
-                              <li class=""> <a href="" class="nodeco footer_1--links mtag">About</a>
-                              <li class=""> <a href="" class="nodeco footer_1--links mtag">Contact</a>
+                              <li class=""> <a href="/" class="nodeco footer_1--links mtag">Home</a>
+                              <li class=""> <a href="https://www.messofy.com/recipes/" class="nodeco footer_1--links mtag">Recipes</a>
+                              <li class=""> <a href="https://www.messofy.com/about-us/" class="nodeco footer_1--links mtag">About</a>
+                              <li class=""> <a href="https://www.messofy.com/contact-us/" class="nodeco footer_1--links mtag">Contact</a>
 
                           </ul>
                       </div>
                       <div class="col-md-3 col-6 pxy2 bod">
                           <h4 class="p1 ltag">Legal</h4>
                           <ul class="lstn p-0 m-0">
-                              <li class=""> <a href="" class="nodeco footer_1--links mtag">Privacy Policy</a>
-                              <li class=""> <a href="" class="nodeco footer_1--links mtag">Terms and Condition</a>
-                              <li class=""> <a href="" class="nodeco footer_1--links mtag">Disclaimer</a>
+                              <li class=""> <a href="https://www.messofy.com/privacy-policy/" class="nodeco footer_1--links mtag">Privacy Policy</a>
+                              <li class=""> <a href="https://www.messofy.com/terms-and-conditions/" class="nodeco footer_1--links mtag">Terms and Condition</a>
+                              <!-- <li class=""> <a href="" class="nodeco footer_1--links mtag">Disclaimer</a> -->
                           </ul>
                       </div>
                   </div>
