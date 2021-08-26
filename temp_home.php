@@ -80,7 +80,7 @@ get_header('header') ?>
                     <!-- Best Indian Deserts Recipes -->
                     <div class="blog_recentpost-heading">
                         <div class="card_head">
-                            <h3>Best Indian Deserts</h3>
+                            <h3>Best Breakfast Recipes</h3>
                             <hr class="card_head_ul">
                         </div>
                     </div>
@@ -91,8 +91,13 @@ get_header('header') ?>
                     
                         $postquery = array(
                             'post_type' => 'post',
-                            'post_status' => 'publish'
-                        );
+                            'post_status' => 'publish',
+                            'tax_query' => array([
+                                'taxonomy' => 'category',
+                                'field' => 'term_id',
+                                'terms' => 2
+                            ])
+                            );
                         
                         $datapq = new wp_query($postquery);
 
