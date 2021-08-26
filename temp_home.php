@@ -333,9 +333,9 @@ get_header('header') ?>
 
                         <?php $cat_all = get_terms(['taxonomy' => 'category']);
                         
-                        echo '<pre>';
-                        print_r($cat_all);
-                        echo '</pre>';
+                        // echo '<pre>';
+                        // print_r($cat_all);
+                        // echo '</pre>';
 
                         // Bring Biryani Category Posts
                         $biryani_posts = array(
@@ -442,49 +442,10 @@ get_header('header') ?>
                     </div>
                 </div>
             </a>
-            <!-- <a href="" class="nodeco">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="../images/uploads/demo3img2.jpg" alt="" class="w-100 sideimg">
-                    </div>
-                    <div class="col-8">
-                        <p class="sidelink"> South Indian Uthpam Rasam | Hydrabadi Style </p>
-                    </div>
-                </div>
-            </a>
-            <a href="" class="nodeco">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="../images/uploads/demoimg1.jpg" alt="" class="w-100 sideimg">
-                    </div>
-                    <div class="col-8">
-                        <p class="sidelink"> Allo Bukhara Egg recipes | Hydrabadi Style </p>
-                    </div>
-                </div>
-            </a> -->
+
 
             <?php  } ?>
 
-
-            <!-- ./newrecipes -->
-
-            <!-- <div class="spacer"></div>
-
-            <h4 class="">Recipes Categories</h4>
-            <ul class="lstn">
-                <a href="">
-                    <li>Breakfast</li>
-                </a>
-                <a href="">
-                    <li>Dinner</li>
-                </a>
-                <li>Lunch</li>
-                <li>Sweets</li>
-                <li>Deserts</li>
-                <li>Dals</li>
-                <li>Chickens</li>
-                <li>Chickens</li>
-            </ul> -->
 
 
         </div>
