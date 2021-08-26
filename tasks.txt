@@ -1,5 +1,6 @@
 1. Improve Design Home.... Working 
-2. Check SEO header.... 
-4. Arrange Post with latest Ones .... at home .... recent Post... Popular post
-5. Enable Searching Feature
-6. 
+2. Check SEO header....     
+4. Arrange Post with latest Ones .... at home .... recent Post... Popular post Pending
+5. Enable Searching Feature        Pending
+6. Include Google adsense Code
+7. 

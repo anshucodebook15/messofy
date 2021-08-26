@@ -5,30 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="iGr3Z5ZOocMnIBJIpzP9-HKK7cd6p5VN8V8WT3sinlo" />
 
     <!-- meta Tags  -->
     <title><?php echo wp_title(); ?></title>
+
+    <?php  wp_head(); ?>
 	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SCDYBW3464"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SCDYBW3464');
-</script>
-    
-
-    <!-- End Meta Tags -->
-	
-	<meta name="google-site-verification" content="iGr3Z5ZOocMnIBJIpzP9-HKK7cd6p5VN8V8WT3sinlo" />
-
-
-   <?php  wp_head(); ?>
-
-
-
     <!-- Bootstrap Css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- End Bootstrap -->
@@ -42,70 +25,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <!-- End Google Font Link -->
 
-
-    <!-- Slick Crousal -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Slick Crousal -->
-
     <!-- Css Link -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
     <!-- End Css Link -->
 
-    <style>
 
-        /* .mes_tag li{
-            list-style: none;
-            padding: 0 !important;
+    <script data-ad-client="ca-pub-2002591565266906" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-        }
-
-        .mes_tag ul{
-            padding: 0 !important;
-            margin: 0 !important;
-        }
-
-        .mes_tag a{
-            text-decoration: none;
-            font-size: 1.5rem
-        }
-
-        .widget{
-            list-style: none;
-            margin-bottom: 2rem !important;
-        }
-
-        .searchform label{
-            display:none;
-            
-        }
-
-        .searchform input{
-            border: 1px solid #eee;
-            padding: .4rem;
-        }
-
-        .widgettitle{
-            font-size: 2.4rem;
-            font-weight: 500;
-        }
-
-        #searchsubmit{
-            background-color: brown;
-            color: #fff;
-        }
-
-        .screen-reader-text{
-            content: '';
-        }
-
-        .cat-item{
-            list-style: none;
-        } */
-
-
-    </style>
 
 </head>
 
