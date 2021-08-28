@@ -8,7 +8,16 @@
 	<meta name="google-site-verification" content="iGr3Z5ZOocMnIBJIpzP9-HKK7cd6p5VN8V8WT3sinlo" />
 
     <!-- meta Tags  -->
+
+    <?php if(is_front_page()){ ?>
+
+    <title><?php echo bloginfo('description'); ?> - <?php echo bloginfo('name'); ?></title>
+        
+     <?php  } else { ?>
+
     <title><?php echo wp_title(); ?></title>
+
+    <?php } ?>
 
     <script data-ad-client="ca-pub-2002591565266906" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
