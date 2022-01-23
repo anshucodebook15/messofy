@@ -19,7 +19,8 @@
 
     <?php } ?>
 
-    <script data-ad-client="ca-pub-2002591565266906" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- New Adsense Code -->
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173429152-1"></script>
     <script>
