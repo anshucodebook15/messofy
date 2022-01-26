@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="google-site-verification" content="iGr3Z5ZOocMnIBJIpzP9-HKK7cd6p5VN8V8WT3sinlo" />
+	<!-- <meta name="google-site-verification" content="iGr3Z5ZOocMnIBJIpzP9-HKK7cd6p5VN8V8WT3sinlo" /> -->
 
     <!-- meta Tags  -->
 
@@ -19,17 +19,20 @@
 
     <?php } ?>
 
-    <!-- New Adsense Code -->
+    <!-- New Adsense Code meswp -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3783278638415084"
+     crossorigin="anonymous"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173429152-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173429152-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'UA-173429152-1');
-    </script>
+    </script> -->
 
     <?php  wp_head(); ?>
 	
